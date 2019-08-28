@@ -1,0 +1,10 @@
+:host {
+    height: 100%;
+    grid-template-areas: 'header''content';
+    grid-template-rows: 110px auto;
+    display: grid;
+    .wrap-outlet {
+        grid-area: content;
+
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "favorites.sortDirection": "DESC",
+    "files.exclude": {
+        "node_modules": true
+    }
+}

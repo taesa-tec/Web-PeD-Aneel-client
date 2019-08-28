@@ -1,0 +1,59 @@
+.form-group {
+    label {
+        color: $blueLight;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    textarea {
+        &.form-control {
+            resize: none;
+        }
+    }
+}
+
+.form-check {
+    .form-check-input {
+        display: inline-block;
+        position: relative;
+        visibility: hidden;
+
+        + .form-check-label {
+            padding-left: 1em;
+
+            &::before {
+                color: inherit;
+                font-family: "taesa-icon" !important;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: $ta-radio-unchecked;
+            }
+        }
+
+        &:checked {
+            + .form-check-label {
+                &::before {
+                    content: $ta-radio-checked;
+                }
+            }
+        }
+
+        &[type=checkbox] {
+            + .form-check-label {
+                &::before {
+                    content: $ta-checkbox-unchecked;
+                }
+            }
+
+            &:checked {
+                + .form-check-label {
+                    &::before {
+                        content: $ta-checkbox-checked;
+                    }
+                }
+            }
+        }
+    }
+}
