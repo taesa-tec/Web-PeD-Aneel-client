@@ -29,7 +29,7 @@
         "bootstrap": "^4.2.1",
         "core-js": "^2.5.4",
         "jquery": "^1.9.1",
-        "lodash-es": "^4.17.11",
+        "lodash-es": "^4.17.21",
         "materialize-css": "^1.0.0-rc.2",
         "moment": "^2.24.0",
         "ngx-currency": "^1.5.1",
